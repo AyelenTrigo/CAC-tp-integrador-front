@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conf Bs As</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="./assets/img/codoacodo.png"
+          alt="imagen de logo de la pag"
+          loading="lazy"
+        />
+        <h2>Conf Bs As</h2>
+      </div>
+
+
+      
+        <div class="menus">
+          <!-- hamb lines -->
+          <input type="radio" name="menus" id="menu_hamb">
+          <label for="menu_hamb" id="label_menu_hamb">&#9776</label>
+          <!-- cross line -->
+          <input type="radio" name="menus" id="menu_back" checked>
+          <label for="menu_back" id="label_menu_back">&#10005</label>
+        
+
+        <nav id="navegacion">
+          <a href="#">La Conferencia</a>
+          <a href="#oradores">Los oradores</a>
+          <a href="#lugar">El lugar y la fecha</a>
+          <a href="#quieroserorador">Conviértete en orador</a>
+          <a class="botton-comprar" href="./page/comprarTicket.html">Comprar tickets</a>
+        </nav>
+</div>
+
+    </header>
+
+    <main>
+      <section class="flyer">
+        <img
+          src="./assets/img/ba1.jpg"
+          alt="Imagen del Palacio de las Aguas en Buenos Aires"
+          loading="lazy"
+        />
+        <div class="container-conferencia">
+          <h1>Conf Bs As</h1>
+          <p class="first-paragraph">
+            Bs As llega por primera vez a Argentina. Un evento para compartir
+            con nuesta comunidad el conocimiento y experiencia de los expertos
+            que están creando el futuro de Internet. Ven a conocer a miembros
+            del evento, a otros estudiantes de Codo a Codo y los oradores de
+            primer nivel que tenemos para ti. Te esperamos!
+          </p>
+          <a class="enlace-1" href="#quieroserorador">Quiero ser orador</a>
+          <a class="enlace-2" href="./page/comprarTicket.html"
+            >Comprar tickets</a
+          >
+        </div>
+      </section>
+
+      <section id="oradores">
+        <div class="conoce_oradores">
+            <h6>CONOCE A LOS</h6>
+            <h2>ORADORES<h2>
+        </div>
+        <div class="oradores_cards">
+          <div class="card">
+            <img id="steve" src="./assets/img/steve.jpg" alt="" />
+            <div class="card-description">
+            <div class="card_tags">
+                <a href="" class="tag_1">JavaScript</a>
+                <a href="" class="tag_2">React</a>
+            </div>
+            <h3 class="card_nombre">Steve Jobs</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio modi ad, aliquam voluptatem accusantium, reprehenderit repellat praesentium repudiandae neque, minus minima dicta? Optio deserunt illo a animi quas repudiandae.
+            </p>
+          </div>
+        </div>
+          <div class="card">
+            <img src="./assets/img/bill.jpg" alt="" />
+            <div class="card-description">
+            <div class="card_tags">
+                <a href="" class="tag_1">JavaScript</a>
+                <a href="" class="tag_2">React</a>
+            </div>
+            <h3 class="card_nombre">Bill Gates</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, non? Odio, veniam illo iste totam unde quaerat vitae quidem accusamus odit quae dolores fugiat possimus, laborum sed exercitationem facere. Fugiat?
+            </p>
+          </div>
+        </div>
+          <div class="card">
+            <img src="./assets/img/ada.jpeg" alt="" />
+            <div class="card-description">
+                <div class="card_tags">
+                    <a href="" class="tag_1">Negocios</a>
+                    <a href="" class="tag_2">Startups</a>
+                </div>
+                <h3 class="card_nombre">Ada Lovelace</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    aspernatur perspiciatis accusantium repellat dicta, culpa eius numquam nesciunt reiciendis mollitia sit consequatur doloribus unde sed quos cumque in ut corrupti.
+                </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="lugar">
+        <img src="./assets/img/honolulu.jpg" alt="" />
+        <div class="container-lugar">
+          <h3>Bs As - Octubre</h3>
+          <p>
+            Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).
+          </p>
+          <a href="">Conocé más</a>
+        </div>
+      </section>
+    </main>
+
+    <section class="seccion_formulario">
+      <div class="container">
+        <div class="titulo_formulario">
+          <h6>CONVIÉRTETE EN UN</h6>
+          <h2>ORADOR<h2>
+          <P>Anótate como orador para dar una <a href=""> charla ignite</a>. Cuéntanos de qué quieres hablar!
+          </P>
+        </div>
+        <form action="">
+          <div class="formulario_nombres">
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Apellido" />
+          </div>
+          <textarea name="" id="" cols="30" placeholder="Sobre qué quieres hablar?" rows="10"></textarea>
+          <p><small>Recuerda incluir un título para tu charla</small></p>
+          <input id="form_enviar" type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <a href="">Preguntas frecuentes</a>
+        <a href="">Contáctanos</a>
+        <a href="">Prensa</a>
+        <a href="">Conferencias</a>
+        <a href="">Términos y condiciones</a>
+        <a href="">Privacidad</a>
+        <a href="">Estudiantes</a>
+      </nav>
+    </footer>
+  </body>
+</html>

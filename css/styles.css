@@ -1,0 +1,536 @@
+:root{
+    --fondo-gris: #353A40;
+    --verde: #29a744;
+    --texto-gris: #a0a0a0;
+    --tags-gris: #6c757e;
+    --tags-amarillo: #fec107;
+    --tags-celeste: #17a2b9;
+    --tags-rojo: #dc3546;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*     H E A D E R     */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background: var(--fondo-gris);
+    width: 100%;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    height: 75px;
+    margin-left: 10px;
+}
+.logo h2{
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+header .menus input{
+    display: none;
+}
+header .menus label{
+    display: none;
+}
+header nav a{
+    color: rgb(161, 160, 160);
+    text-decoration: none;
+    padding: 5px;
+    white-space: nowrap;
+}
+.botton-comprar{
+    color: var(--verde);
+}
+header nav a:hover{
+    color: white;
+}
+.menus{
+    display: flex;
+}
+
+/*    F L Y E R     */
+
+.flyer{
+    position: relative;
+    background-color: var(--fondo_gris);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: end;
+}
+.flyer img{
+    width: 100%;
+    flex-wrap: nowrap;
+    filter: brightness(50%);
+    position: relative;
+}
+.container-conferencia{
+    position: absolute;
+    max-width: 460px;
+    /* bottom: 250px; */
+    float: right;
+    text-align: right;
+    padding: 20px;
+    color: white;
+    bottom: 25%;
+    right: 5%
+}
+.first-paragraph{
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    margin: 10px 0;
+}
+.container-conferencia a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+.enlace-1{
+    border: 1px solid white;
+}
+.enlace-2{
+    background: rgb(66, 173, 66);
+    
+}
+
+/* O R A D O R E S */
+
+#oradores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conoce_oradores{
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+    /* font-size: 20px; */
+}
+.oradores_cards{
+    display: flex;
+    flex-direction: row;
+}
+.oradores_cards .card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 12px;
+}
+.card_nombre{
+    margin: 5px 0 10px 0;
+}
+.card p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.card_tags{
+    
+    margin: 10px 0 0 0;
+}
+.card_tags a{
+    padding: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.card:nth-child(1) .tag_1{
+    background: var(--tags-amarillo);
+}
+.card:nth-child(2) .tag_1{
+    background: var(--tags-amarillo);
+}
+.card:nth-child(3) .tag_1{
+    background: var(--tags-gris);
+    color: #fff;
+}
+
+.card:nth-child(1) .tag_2{
+    background: var(--tags-celeste);
+    color: #fff;
+}
+.card:nth-child(2) .tag_2{
+    background: var(--tags-celeste);
+    color: #fff;
+}
+.card:nth-child(3) .tag_2{
+    background: var(--tags-rojo);
+    color: #fff;
+}
+
+/* H O N O L U L U*/
+
+#lugar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+}
+#lugar img{
+    width: 50%;
+    border: #fff solid 1px;
+}
+.container-lugar{
+    width: 50%;
+    background-color: var(--fondo-gris);
+    color: rgb(233, 233, 233);
+    padding: 12px;
+}
+.container-lugar h3{
+    font-size: 18px;
+}
+.container-lugar p{
+    font-size: 9px;
+    line-height: 16px;
+    padding: 10px 0;
+}
+.container-lugar a{
+    font-size: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: rgb(233, 233, 233);
+    border: 1px solid white;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* F O R M U L A R I O S*/
+
+.seccion_formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.titulo_formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+}
+.titulo_formulario p{
+    font-size: 12px;
+    padding: 20px 0 0;
+    color: var(--fondo-gris);
+}
+.titulo_formulario p a{
+    border-bottom: 1px dotted var(--fondo-gris);
+    text-decoration: none;
+    color: var(--fondo-gris)
+}
+.seccion_formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.formulario_nombres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    width: 100%;
+    gap: 25px;
+}
+.formulario_nombres input{
+    width: 100%;
+    height: 30px;
+    border: solid 1px #c5c5c5;
+}
+form textarea{
+    width: 100%;
+    margin: 0 10px 10px;
+    border: solid 1px #c5c5c5;
+}
+form p{
+    width: 100%;
+    padding: 5px 0 15px;
+}
+p small{
+    position: relative;
+    text-align: left;
+    color: var(--tags-gris);
+}
+#form_enviar{
+    width: 100%;
+    height: 35px;
+    background: #96c93e;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*    F O O T E R    */
+
+footer{
+    height: 100px;
+    background: #1d4e6c;
+    display: flex;
+}
+footer nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+footer nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    width: 130px;
+    text-align: center;
+}
+footer nav a:hover{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1010px){
+    /*    H E A D E R    */
+
+    header{
+        flex-wrap: unset;
+    }
+    header nav{
+        justify-content: end;
+        /* padding: 10px; */
+    }
+    header nav a{
+        font-size: 14px;
+    }
+    .logo h2{
+    width: max-content;
+    }
+    /*    F L Y E R     */
+    .container-conferencia{
+        bottom: 10%;
+    }
+    .first-paragraph{
+        font-size: 12px;
+    }
+
+    /* O R A D O R E S */
+    .oradores_cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* H O N O L U L U*/
+    #lugar{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #lugar img{
+        width: 100%;
+        border: none;
+    }
+    .container-lugar{
+        width: 100%;
+    }
+    /* F O R M U L A R I O S*/
+    .container{
+        width: 90%;
+    }
+    .titulo_formulario p{
+        padding: 10px;
+    }
+    .formulario form{
+        width: unset;
+    }
+
+    /*    F O O T E R    */
+
+    footer{
+        height: auto;
+        position: relative;
+        top: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 650px){
+
+    /*    H E A D E R    */
+
+    header{
+        height: 90px;
+        width: 100%;
+    }
+    #navegacion{
+        display: none;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-start;
+        height: 160px;
+        background: var(--fondo-gris);
+        z-index: 1;
+        position: relative;
+    }
+    .menus label{
+        display: flex;
+    }
+    header #label_menu_hamb, #label_menu_back{
+        display: block;
+        color: white;
+        font-size: 24px;
+        padding: 20px;
+        cursor: pointer;
+        position: relative;
+        float: right;
+    }
+    #menu_hamb:checked + #label_menu_hamb{
+        display: none;
+    }
+    #menu_back:checked + #label_menu_back{
+        display: none;
+    }
+    
+    #menu_hamb:checked ~nav{
+        display: flex;
+        position: relative;
+        padding: 10px;
+        box-sizing: border-box;
+        width: max-content;
+        float: right;
+        bottom: 12px;
+    }
+    .menus{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 0;
+    }
+    
+    .logo img{
+        height: 60px;
+    }
+    .logo h2{
+        font-size: 16px;
+    }
+/*    F L Y E R    */
+    main, .seccion_formulario{
+        position: relative;
+        top: 88px;
+    }
+    /* #oradores, #lugar, .seccion_formulario, footer{
+         top: 88px;
+         position: relative;
+    } */
+    h1{
+        font-size: 18px;
+    }
+    .container-conferencia a{
+        font-size: 12px;
+    }
+    
+    .seccion_formulario form{
+        width: unset;
+        position: relative;
+        bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    header{
+        height: 60px;
+    }
+    .flyer{
+        display: block;
+    }
+    .first-paragraph{
+        color: black;
+        
+    }
+    .enlace-1 {
+        border: #000;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        top: 40px;
+        position: relative;
+   }
+    .container-conferencia{
+        /* position: relative; */
+        top: 10px;
+        position: relative;
+        line-height: 14px;
+        color: #000;
+        margin: auto;
+    }
+    #oradores{
+        position: relative;
+        display: block;
+        /* top: 30px; */
+    }
+    .conoce_oradores{
+        width: unset;
+    }
+    .oradores_cards .card{
+        width: 270px;
+        margin: 2px;
+    }
+    #oradores, #lugar, .seccion_formulario, footer{
+        top: 30px;
+        position: relative;
+    }
+    .container{
+        top: 30px;
+        position: relative;
+    }
+    footer nav a{
+        font-size: 10px;
+        padding: 5px;
+    }
+}
