@@ -7,7 +7,6 @@
     <title>Conf Bs As</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <header>
       <div class="logo">
@@ -18,30 +17,25 @@
         />
         <h2>Conf Bs As</h2>
       </div>
-
-
-      
-        <div class="menus">
-          <!-- hamb lines -->
-          <input type="radio" name="menus" id="menu_hamb">
-          <label for="menu_hamb" id="label_menu_hamb">&#9776</label>
-          <!-- cross line -->
-          <input type="radio" name="menus" id="menu_back" checked>
-          <label for="menu_back" id="label_menu_back">&#10005</label>
+      <div class="menus">
+        <!-- hamb lines -->
+        <input type="radio" name="menus" id="menu_hamb">
+        <label for="menu_hamb" id="label_menu_hamb">&#9776</label>
+        <!-- cross line -->
+        <input type="radio" name="menus" id="menu_back" checked>
+        <label for="menu_back" id="label_menu_back">&#10005</label>
         
-
         <nav id="navegacion">
           <a href="#">La Conferencia</a>
           <a href="#oradores">Los oradores</a>
           <a href="#lugar">El lugar y la fecha</a>
-          <a href="#quieroserorador">Conviértete en orador</a>
-          <a class="botton-comprar" href="./page/comprarTicket.html">Comprar tickets</a>
+          <a href="#formularioOrador">Conviértete en orador</a>
+          <a class="botton-comprar" href="tickets.html">Comprar tickets</a>
         </nav>
-</div>
-
+      </div>
     </header>
 
-    <main>
+    <main id="main_principal">
       <section class="flyer">
         <img
           src="./assets/img/ba1.jpg"
@@ -58,14 +52,14 @@
             primer nivel que tenemos para ti. Te esperamos!
           </p>
           <a class="enlace-1" href="#quieroserorador">Quiero ser orador</a>
-          <a class="enlace-2" href="./page/comprarTicket.html"
+          <a class="enlace-2" href="/tickets.html"
             >Comprar tickets</a
           >
         </div>
       </section>
 
       <section id="oradores">
-        <div class="conoce_oradores">
+        <div class="conoce_oradores"><a href="#oradores"></a>
             <h6>CONOCE A LOS</h6>
             <h2>ORADORES<h2>
         </div>
@@ -112,7 +106,7 @@
         </div>
       </section>
 
-      <section id="lugar">
+      <section id="lugar"><a href="#lugar"></a>
         <img src="./assets/img/honolulu.jpg" alt="" />
         <div class="container-lugar">
           <h3>Bs As - Octubre</h3>
@@ -125,7 +119,7 @@
     </main>
 
     <section class="seccion_formulario">
-      <div class="container">
+      <div class="container"><a href="#formularioOrador"></a>
         <div class="titulo_formulario">
           <h6>CONVIÉRTETE EN UN</h6>
           <h2>ORADOR<h2>

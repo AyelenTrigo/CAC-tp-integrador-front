@@ -13,6 +13,10 @@
     box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+body{
+    width: 100%;
+    height: 100%;
+}
 
 /*     H E A D E R     */
 
@@ -23,7 +27,7 @@ header{
     background: var(--fondo-gris);
     width: 100%;
     flex-wrap: wrap;
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
 }
 .logo{
@@ -302,6 +306,46 @@ p small{
     border-radius: 5px;
     cursor: pointer;
 }
+/* FORMULACIO VENTA TICKETS*/
+#main_tickets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+#ticket_cantidad{
+    display: flex;
+}
+#descuentos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.card_descuento{
+    border: 1px solid black;
+    width: 250px;
+    height: 220px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+
+}
+#venta_tickets{
+    display: flex;
+    width: 770px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex-direction: column;
+    text-align: center;
+}
 
 /*    F O O T E R    */
 
@@ -309,6 +353,9 @@ footer{
     height: 100px;
     background: #1d4e6c;
     display: flex;
+    width: 100%;
+    position: absolute;
+    /* bottom: 0; */
 }
 footer nav{
     width: 100%;
@@ -390,9 +437,8 @@ footer nav a:hover{
     footer{
         height: auto;
         position: relative;
-        top: 50px;
+        /* top: 50px; */
     }
-
 }
 
 @media only screen and (max-width: 650px){
@@ -402,6 +448,7 @@ footer nav a:hover{
     header{
         height: 90px;
         width: 100%;
+        /* position: absolute; */
     }
     #navegacion{
         display: none;
@@ -455,9 +502,9 @@ footer nav a:hover{
         font-size: 16px;
     }
 /*    F L Y E R    */
-    main, .seccion_formulario{
+#main_principal, .seccion_formulario{
         position: relative;
-        top: 88px;
+        /* top: 88px; */
     }
     /* #oradores, #lugar, .seccion_formulario, footer{
          top: 88px;
@@ -497,8 +544,8 @@ footer nav a:hover{
         justify-content: center;
         align-items: center;
     }
-    main{
-        top: 40px;
+    #main_principal{
+        /* top: 40px; */
         position: relative;
    }
     .container-conferencia{

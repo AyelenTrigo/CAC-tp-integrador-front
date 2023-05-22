@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conf Bs As</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img
+            src="./assets/img/codoacodo.png"
+            alt="imagen de logo de la pag"
+            loading="lazy"
+          />
+          <h2>Conf Bs As</h2>
+        </div>
+        <div class="menus">
+          <input type="radio" name="menus" id="menu_hamb">
+          <label for="menu_hamb" id="label_menu_hamb">&#9776</label>
+          <input type="radio" name="menus" id="menu_back" checked>
+          <label for="menu_back" id="label_menu_back">&#10005</label>
+          
+          <nav id="navegacion">
+            <a href="index.html">La Conferencia</a>
+            <a href="#oradores">Los oradores</a>
+            <a href="#lugar">El lugar y la fecha</a>
+            <a href="#quieroserorador">Conviértete en orador</a>
+            <a class="botton-comprar" href="tickets.html">Comprar tickets</a>
+          </nav>
+        </div>
+      </header>
+      <main id="main_tickets">
+        <div id="descuentos">
+            <div class="card_descuento">
+                <h3>Estudiante</h3>
+                <p>Tienen un descuento</p>
+                <p><b>80%</b></p>
+                <small>*presentar documentación</small>
+            </div>
+            <div class="card_descuento">
+                <h3>Trainee</h3>
+                <p>Tienen un descuento</p>
+                <p><b>50%</b></p>
+                <small>*presentar documentación</small>
+            </div>
+            <div class="card_descuento">
+                <h3>Junior</h3>
+                <p>Tienen un descuento</p>
+                <p><b>15%</b></p>
+                <small>*presentar documentación</small>
+            </div>
+        </div>
+            <form action="" id="venta_tickets">
+                <p>venta</p>
+                <h2>VALOR DE TICKET $200</h2>
+                <label class="nombres">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </label>
+                <input type="email" name="" id="" placeholder="Correo">
+                <span>
+                    <label for="" id="ticket_cantidad">Cantidad
+                        <input type="text" placeholder="Cantidad">
+                    </label>
+                    <label for="">Categoría
+                        <select>
+                            <option selected        value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+                    </label>
+                </span>
+                <div class="total_a_pagar"></div>
+                <div class="botones">
+                    <button id="btn_borrar">Borrar</button>
+                    <button id="btn_resumen">Resumen</button>
+                </div>
+            </form>
+        </main>
+      <footer>
+        <nav>
+          <a href="">Preguntas frecuentes</a>
+          <a href="">Contáctanos</a>
+          <a href="">Prensa</a>
+          <a href="">Conferencias</a>
+          <a href="">Términos y condiciones</a>
+          <a href="">Privacidad</a>
+                <a href="">Estudiantes</a>
+            </nav>
+        </footer>
+    </body>
+</html>
