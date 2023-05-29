@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conf Bs As</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/ticketsStyles.css">
 </head>
 <body>
     <header>
@@ -57,23 +58,25 @@
                 <p>venta</p>
                 <h2>VALOR DE TICKET $200</h2>
                 <label class="nombres">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
+                    <input type="text" placeholder="Nombre" class="fields">
+                    <input type="text" placeholder="Apellido" class="fields">
                 </label>
-                <input type="email" name="" id="" placeholder="Correo">
-                <span>
+                <label for="" class="email">
+                    <input type="email" name=""  placeholder="Correo" class="fields">
+                </label>
+                <label class="cantidadYCategoria">
                     <label for="" id="ticket_cantidad">Cantidad
-                        <input type="text" placeholder="Cantidad">
+                        <input type="text" placeholder="Cantidad" class="fields">
                     </label>
                     <label for="">Categoría
-                        <select>
-                            <option selected        value="Estudiante">Estudiante</option>
+                        <select class="fields">
+                            <option selected  value="Estudiante">Estudiante</option>
                             <option value="Trainee">Trainee</option>
                             <option value="Junior">Junior</option>
                         </select>
                     </label>
-                </span>
-                <div class="total_a_pagar"></div>
+                </label>
+                <div class="total_a_pagar">Total a pagar: $ </div>
                 <div class="botones">
                     <button id="btn_borrar">Borrar</button>
                     <button id="btn_resumen">Resumen</button>

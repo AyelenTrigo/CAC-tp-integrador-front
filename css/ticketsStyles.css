@@ -1,0 +1,108 @@
+/* FORMULACIO VENTA TICKETS*/
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+#main_tickets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 20px;
+}
+#ticket_cantidad{
+    display: flex;
+}
+#descuentos{
+    display: flex;
+    gap: 10px;
+}
+.card_descuento{
+    border: 1px solid black;
+    width: 250px;
+    height: 220px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+
+}
+#venta_tickets{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+}
+.nombres{
+    display: flex;
+    width: 100%;
+    margin: 15px;
+    gap: 10px;
+}
+
+.email{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5px 0 ;
+    display: flex;
+}
+.fields{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 0.5px rgb(207, 207, 207);
+    /* margin: 5px; */
+    width: 100%;
+    box-sizing: border-box;
+}
+.cantidadYCategoria{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0;
+    gap: 10px;
+}
+.cantidadYCategoria label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin: 5px; */
+}
+.cantidadYCategoria select{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.total_a_pagar{
+    display: flex;
+    background-color: rgb(205, 226, 250);
+    border-radius: 5px;
+    border: 1x solid blue;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+.botones{
+
+}
+
+footer{
+    bottom: 0;
+}

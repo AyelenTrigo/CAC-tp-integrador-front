@@ -274,6 +274,7 @@ header nav a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
     margin: 20px;
     width: 100%;
     gap: 25px;
@@ -306,46 +307,7 @@ p small{
     border-radius: 5px;
     cursor: pointer;
 }
-/* FORMULACIO VENTA TICKETS*/
-#main_tickets{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    flex-direction: column;
-    padding: 20px;
-}
-#ticket_cantidad{
-    display: flex;
-}
-#descuentos{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    box-sizing: border-box;
-    position: relative;
-}
-.card_descuento{
-    border: 1px solid black;
-    width: 250px;
-    height: 220px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10px;
 
-}
-#venta_tickets{
-    display: flex;
-    width: 770px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    flex-direction: column;
-    text-align: center;
-}
 
 /*    F O O T E R    */
 
