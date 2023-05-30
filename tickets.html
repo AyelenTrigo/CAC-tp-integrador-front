@@ -54,32 +54,32 @@
                 <small>*presentar documentación</small>
             </div>
         </div>
-            <form action="" id="venta_tickets">
+            <form id="venta_tickets">
                 <p>venta</p>
                 <h2>VALOR DE TICKET $200</h2>
-                <label class="nombres">
-                    <input type="text" placeholder="Nombre" class="fields">
-                    <input type="text" placeholder="Apellido" class="fields">
+                <label class="nombre_y_apellido">
+                    <input type="text" placeholder="Nombre" class="fields" required>
+                    <input type="text" placeholder="Apellido" class="fields" required>
                 </label>
                 <label for="" class="email">
-                    <input type="email" name=""  placeholder="Correo" class="fields">
+                    <input type="email" name=""  placeholder="Correo" class="fields" required>
                 </label>
                 <label class="cantidadYCategoria">
-                    <label for="" id="ticket_cantidad">Cantidad
-                        <input type="text" placeholder="Cantidad" class="fields">
+                    <label for="" >Cantidad
+                        <input type="number" min="1" placeholder="Cantidad" id="ticket_cantidad" class="fields" required>
                     </label>
                     <label for="">Categoría
-                        <select class="fields">
-                            <option selected  value="Estudiante">Estudiante</option>
-                            <option value="Trainee">Trainee</option>
-                            <option value="Junior">Junior</option>
+                        <select class="fields opciones" id="opciones" name="opciones">
+                            <option value="estudiante" id="estudiante">Estudiante</option>
+                            <option value="trainee" id="trainee">Trainee</option>
+                            <option value="junior" id="junior">Junior</option>
                         </select>
                     </label>
                 </label>
-                <div class="total_a_pagar">Total a pagar: $ </div>
+                <div id="total_a_pagar">Total a pagar: $ </div>
                 <div class="botones">
-                    <button id="btn_borrar">Borrar</button>
-                    <button id="btn_resumen">Resumen</button>
+                    <button id="btn_borrar" type="reset">Borrar</button>
+                    <button id="btn_resumen" type="submit">Resumen</button>
                 </div>
             </form>
         </main>
@@ -94,5 +94,6 @@
                 <a href="">Estudiantes</a>
             </nav>
         </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>
