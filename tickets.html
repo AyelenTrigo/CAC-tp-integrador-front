@@ -58,15 +58,15 @@
                 <p>venta</p>
                 <h2>VALOR DE TICKET $200</h2>
                 <label class="nombre_y_apellido">
-                    <input type="text" placeholder="Nombre" class="fields" required>
-                    <input type="text" placeholder="Apellido" class="fields" required>
+                    <input type="text" placeholder="Nombre" class="fields" name="nombre" id="nombre" required>
+                    <input type="text" placeholder="Apellido" class="fields" name="apellido" id="apellido" required>
                 </label>
                 <label for="" class="email">
-                    <input type="email" name=""  placeholder="Correo" class="fields" required>
+                    <input type="email" name="email" id="email" placeholder="Correo" class="fields" required>
                 </label>
                 <label class="cantidadYCategoria">
                     <label for="" >Cantidad
-                        <input type="number" min="1" placeholder="Cantidad" id="ticket_cantidad" class="fields" required>
+                        <input type="number" min="1" placeholder="Cantidad" id="ticket_cantidad" class="fields" value="1" required>
                     </label>
                     <label for="">Categoría
                         <select class="fields opciones" id="opciones" name="opciones">
@@ -76,6 +76,7 @@
                         </select>
                     </label>
                 </label>
+                <p id="mensaje_error_validacion"></p>
                 <div id="total_a_pagar">Total a pagar: $ </div>
                 <div class="botones">
                     <button id="btn_borrar" type="reset">Borrar</button>

@@ -1,16 +1,39 @@
 const btnResumen = document.getElementById("btn_resumen")
 const btnBorrar = document.getElementById("btn_borrar")
-const VALOR_DE_TICKET = 200
 let total = document.getElementById("total_a_pagar")
+const VALOR_DE_TICKET = 200
+const error = document.getElementById('mensaje_error_validacion')
+let errorInnerText = error.innerText
 
 
 btnResumen.addEventListener("click", (e)=>{
     e.preventDefault()
-    const cantidad = document.getElementById("ticket_cantidad").value
+    let validacion = true;
+    let cantidad = document.getElementById("ticket_cantidad").value
     const opciones = document.getElementById('opciones')
     const opcionSeleccionada = opciones.options[opciones.selectedIndex].value
-    calcularDescuento(opcionSeleccionada, cantidad)
-    console.log(opcionSeleccionada, cantidad)
+    const nombre = document.getElementById("nombre").value
+    const apellido = document.getElementById("apellido").value
+    
+    if(validarEmail(email.value)==false){
+        error.innerHTML = `Por favor, ingrese un email válido`
+        validacion=false
+    }
+    if(apellido==''){
+        error.innerText = `Por favor, ingrese el apellido`
+        validacion=false
+    }
+    if(nombre==''){
+        error.innerText = `Por favor, ingrese el nombre`
+        validacion=false
+    }
+    if (validacion){
+        error.innerText = ` `
+        calcularDescuento(opcionSeleccionada, cantidad)
+    } else{
+        total.innerText = `Total a pagar: $`
+    }
+   return opcionSeleccionada, cantidad
 })
 
 btnBorrar.addEventListener("submit", (e)=>{
@@ -19,6 +42,11 @@ btnBorrar.addEventListener("submit", (e)=>{
     resetFormulario.reset()
 })
 
+function validarEmail() {
+    const email = document.getElementById("email").value
+    const regex = /[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}/;
+    return regex.test(email);
+}
 
 function calcularDescuento(opcionSeleccionada, cantidad){
     var descuento=0
@@ -36,6 +64,6 @@ function calcularDescuento(opcionSeleccionada, cantidad){
             break;
     }
     total.innerHTML = `Total a pagar: $${descuento}`
-    return descuento, console.log(descuento)
+    return descuento
     
 }
