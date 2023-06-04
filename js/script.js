@@ -18,7 +18,6 @@ btnResumen.addEventListener("click", (e)=>{
     
     if(validarEmail(email.value)==false){
         error.innerHTML = `Por favor, ingrese un email válido`
-        email.classList.add("error_input")
         validacion=false
     }
     if(apellido==''){
@@ -28,7 +27,6 @@ btnResumen.addEventListener("click", (e)=>{
     if(nombre==''){
         error.innerText = `Por favor, ingrese el nombre`
         console.log(typeof(nombre))
-        nombre.classList.add
         validacion=false
     }
     if (validacion){
@@ -41,6 +39,7 @@ btnResumen.addEventListener("click", (e)=>{
 })
 btnBorrar.addEventListener("click", (e)=>{
     e.preventDefault()
+    error.innerText = ` `
     console.log("boton borrar")
     total.innerText = `Total a pagar: $`
     const resetFormulario = document.getElementById("venta_tickets")

@@ -118,6 +118,10 @@ body{
     padding: 10px;
     margin: 10px 0;
 }
+#mensaje_error_validacion{
+    color:red;
+    height: 40px;
+}
 .botones{
     width: 100%;
     display: flex;
