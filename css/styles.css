@@ -410,7 +410,6 @@ footer nav a:hover{
     header{
         height: 90px;
         width: 100%;
-        /* position: absolute; */
     }
     #navegacion{
         display: none;
@@ -466,12 +465,7 @@ footer nav a:hover{
 /*    F L Y E R    */
 #main_principal, .seccion_formulario{
         position: relative;
-        /* top: 88px; */
     }
-    /* #oradores, #lugar, .seccion_formulario, footer{
-         top: 88px;
-         position: relative;
-    } */
     h1{
         font-size: 18px;
     }

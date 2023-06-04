@@ -1,4 +1,12 @@
 /* FORMULACIO VENTA TICKETS*/
+:root{
+    --celeste: #cce5ff;
+    --verde: #97c93e;
+    --junior: #ffc107;
+    --trainee:#17a2b8;
+    --estudiante: #007bff;
+
+}
 body{
     display: flex;
     flex-direction: column;
@@ -18,6 +26,9 @@ body{
 #ticket_cantidad{
     display: flex;
 }
+#ticket_cantidad, #opciones{
+    margin-top: 10px;
+}
 #descuentos{
     display: flex;
     gap: 10px;
@@ -31,14 +42,21 @@ body{
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
-
+}
+.card_descuento:nth-child(1){
+    border: 1px solid var(--estudiante)
+}
+.card_descuento:nth-child(2){
+    border: 1px solid var(--trainee)
+}
+.card_descuento:nth-child(3){
+    border: 1px solid var(--junior)
 }
 #venta_tickets{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     flex-direction: column;
     text-align: center;
     margin: 10px 0;
@@ -49,7 +67,9 @@ body{
     margin: 15px;
     gap: 10px;
 }
-
+.error_input{
+    border: 1px solid red;
+}
 .email{
     width: 100%;
     box-sizing: border-box;
@@ -58,7 +78,7 @@ body{
     display: flex;
 }
 .fields{
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     border: solid 0.5px rgb(207, 207, 207);
     width: 100%;
@@ -77,6 +97,7 @@ body{
     text-align: left;
     width: 100%;
     box-sizing: border-box;
+    padding-bottom: 5px;
 }
 .cantidadYCategoria select{
     display: flex;
@@ -95,12 +116,38 @@ body{
     width: 100%;
     align-items: center;
     padding: 10px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .botones{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.boton{
+    background-color: var(--verde);
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 
+}
+header{
+    justify-content: space-around;
+}
+.logo img{
+    display: none;
 }
 
 footer{
     bottom: 0;
+}
+@media only screen and (max-width: 768px){
+    #descuentos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

@@ -4,6 +4,7 @@ let total = document.getElementById("total_a_pagar")
 const VALOR_DE_TICKET = 200
 const error = document.getElementById('mensaje_error_validacion')
 let errorInnerText = error.innerText
+let errorInput = document.getElementById('error_input')
 
 
 btnResumen.addEventListener("click", (e)=>{
@@ -17,6 +18,7 @@ btnResumen.addEventListener("click", (e)=>{
     
     if(validarEmail(email.value)==false){
         error.innerHTML = `Por favor, ingrese un email válido`
+        email.classList.add("error_input")
         validacion=false
     }
     if(apellido==''){
@@ -25,6 +27,8 @@ btnResumen.addEventListener("click", (e)=>{
     }
     if(nombre==''){
         error.innerText = `Por favor, ingrese el nombre`
+        console.log(typeof(nombre))
+        nombre.classList.add
         validacion=false
     }
     if (validacion){
@@ -35,9 +39,10 @@ btnResumen.addEventListener("click", (e)=>{
     }
    return opcionSeleccionada, cantidad
 })
-
-btnBorrar.addEventListener("submit", (e)=>{
+btnBorrar.addEventListener("click", (e)=>{
     e.preventDefault()
+    console.log("boton borrar")
+    total.innerText = `Total a pagar: $`
     const resetFormulario = document.getElementById("venta_tickets")
     resetFormulario.reset()
 })
